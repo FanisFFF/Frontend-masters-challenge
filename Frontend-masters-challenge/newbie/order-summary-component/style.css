@@ -6,7 +6,7 @@ body {
   max-width: 1440px;
   height: 100vh;
   background-image: url("./images/pattern-background-desktop.svg");
-  background-color: hsl(225, 100%, 98%);
+  background-color: hsl(225, 100%, 94%);
   background-repeat: no-repeat;
 }
 
@@ -23,6 +23,7 @@ body {
 }
 .container h2 {
   font-weight: 900;
+  color: hsl(223, 47%, 23%);
 }
 
 .image-container {
@@ -94,6 +95,7 @@ body {
   margin-top: 10px;
   margin-bottom: 3px;
   font-weight: 900;
+  color: hsl(223, 47%, 23%);
 }
 .plan p {
   margin-top: 3px;
