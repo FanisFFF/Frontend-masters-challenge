@@ -150,6 +150,7 @@ button {
   width: 220px;
   border-width: 0;
   letter-spacing: 0.8px;
+  height: 45px;
 }
 button:hover {
   background: linear-gradient(hsla(241, 72%, 46%, 90%), hsla(256, 72%, 46%, 1));
