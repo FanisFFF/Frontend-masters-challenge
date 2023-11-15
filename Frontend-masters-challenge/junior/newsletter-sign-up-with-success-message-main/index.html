@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+
+    <div class="card form--card">
+      <div class="form--container">
+        <div class="img--container image-1">
+          <img src="assets/images/illustration-sign-up-mobile.svg" alt="" />
+        </div>
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li class="list--item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+            >
+              <g fill="none">
+                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M6 11.381 8.735 14 15 8"
+                />
+              </g>
+            </svg>
+            Product discovery and building what matters
+          </li>
+          <li class="list--item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+            >
+              <g fill="none">
+                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M6 11.381 8.735 14 15 8"
+                />
+              </g></svg
+            >Measuring to ensure updates are a success
+          </li>
+          <li class="list--item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+            >
+              <g fill="none">
+                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M6 11.381 8.735 14 15 8"
+                />
+              </g></svg
+            >And much more!
+          </li>
+        </ul>
+        <form novalidate id="loginForm" action="">
+          <div class="labels">
+            <label for="email-form"> Email address </label>
+            <label class="invalid-label hidden" for="email-form"
+              >Valid email required</label
+            >
+          </div>
+          <input
+            required
+            name="email-form"
+            type="email"
+            placeholder="email@company.com"
+            class=""
+          />
+          <button class="submit--btn btn" type="submit">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+      <div class="img--container image-2">
+        <img
+          src="assets/images/illustration-sign-up-desktop.svg"
+          alt="sign-up image"
+        />
+      </div>
+      <!-- Sign-up form end -->
+
+      <!-- Success message start -->
+
+      <!-- Success message end -->
+    </div>
+    <div class="card submitted--card hidden">
+      <img src="assets/images/icon-success.svg" alt="Success image" />
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to
+        <strong> ash@loremcompany.com.</strong>
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <button class="submitted--btn btn">Dismiss message</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
