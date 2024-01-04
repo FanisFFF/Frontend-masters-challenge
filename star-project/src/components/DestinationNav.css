@@ -1,0 +1,48 @@
+.destinationNav > * {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.destinationNav ul {
+  display: flex;
+  justify-content: space-around;
+  max-width: 20rem;
+}
+
+.destination--header {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+.destination--header-num {
+  color: #979797;
+  font-weight: 600;
+}
+.destinationNav li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: solid 3px rgba(255, 255, 255, 0);
+}
+.destinationNav a {
+  color: #d0d6f9;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.destinationNav p {
+  color: #d0d6f9;
+  font-weight: 500;
+}
+
+.destination-selected {
+  border: 1rem;
+  border-bottom: solid white 3px !important;
+}
+.destination-selected li {
+  color: #fff;
+}
+.destination-selected a {
+  color: #fff;
+}

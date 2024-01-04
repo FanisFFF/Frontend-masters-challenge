@@ -1,0 +1,37 @@
+.destination--main > * {
+  color: #fff;
+}
+.destination--header {
+  color: #fff;
+}
+.destination--main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.destination--nav {
+  display: flex;
+  align-items: center;
+}
+.destination--image-container img {
+  max-width: 100%;
+  padding: 2rem;
+}
+
+.destionation--text-contaier p {
+  color: #d0d6f9;
+}
+.destination--distance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+}
+
+.destionation--font-change {
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.125rem;
+}
+.destination--description {
+  margin-bottom: 2rem;
+}

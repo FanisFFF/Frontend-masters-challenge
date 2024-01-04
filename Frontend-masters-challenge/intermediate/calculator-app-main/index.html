@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html data-theme="" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <div class="logo">calc</div>
+        <div class="theme-container">
+          <p>Theme</p>
+          <div class="theme-switcher">
+            <div class="labels">
+              <label for="main">1</label>
+              <label for="second">2</label>
+              <label for="third">3</label>
+            </div>
+            <input id="main" type="radio" checked name="theme" />
+            <input id="second" type="radio" name="theme" />
+            <input id="third" type="radio" name="theme" />
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="calc-screen">0</div>
+        <div class="calc-buttons">
+          <div class="small-buttons">
+            <button class="num">7</button>
+            <button class="num">8</button>
+            <button class="num">9</button>
+            <button class="delete | clr-btn-100">Del</button>
+            <button class="num">4</button>
+            <button class="num">5</button>
+            <button class="num">6</button>
+            <button class="op">+</button>
+            <button class="num">1</button>
+            <button class="num">2</button>
+            <button class="num">3</button>
+            <button class="op">-</button>
+            <button class="num">.</button>
+            <button class="num">0</button>
+            <button class="op">/</button>
+            <button class="op">x</button>
+          </div>
+          <div class="big-buttons">
+            <button class="reset | clr-btn-secondary">Reset</button>
+            <button class="equal | clr-btn-primary">=</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script-theme.js"></script>
+    <script src="calculator.js" type="module"></script>
+  </body>
+</html>

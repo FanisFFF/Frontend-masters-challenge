@@ -1,0 +1,36 @@
+.navBar > * {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.navBar {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+}
+.navBar ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navBar li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: solid 3px rgba(255, 255, 255, 0);
+}
+.navBar a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.navBar p {
+  color: #fff;
+  font-weight: 500;
+}
+
+.selected {
+  border: 1rem;
+  border-bottom: solid white 3px !important;
+}

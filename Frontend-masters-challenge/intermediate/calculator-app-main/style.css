@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  box-sizing: border-box;
+}
+html,
+html[data-theme="main"] {
+  --screen-bg-color: var(--bg-clr-800);
+  --screen-text-color: var(--text-color-100);
+  --header-text-color: var(--text-color-100);
+  --button-main-colors: var(--key-bg-main-300);
+  --button-text-main-colors: var(--text-color-400);
+  --button-primary-text-colors: var(--text-color-100);
+
+  --bg-clr-300: hsl(222, 26%, 31%);
+  --bg-clr-400: hsl(223, 31%, 20%);
+  --bg-clr-800: hsl(224, 36%, 15%);
+
+  --key-bg-secondary-300: hsl(225, 21%, 49%);
+  --key-sh-secondary-300: hsl(224, 28%, 35%);
+  --key-bg-primary-300: hsl(6, 63%, 50%);
+  --key-sh-primary-300: hsl(6, 70%, 34%);
+  --key-bg-main-300: hsl(30, 25%, 89%);
+  --key-sh-main-300: hsl(28, 16%, 65%);
+
+  --text-color-400: hsl(221, 14%, 31%);
+  --text-color-100: hsl(0, 0%, 100%);
+  --clr-primary-hover: hsl(6, 63%, 60%);
+  --clr-main-hover: hsl(30, 25%, 94%);
+  --clr-secondary-hover: hsl(220, 27%, 2%);
+}
+html[data-theme="light"] {
+  --screen-bg-color: hsl(0, 0%, 93%);
+  --screen-text-color: var(--text-color-400);
+  --header-text-color: var(--text-color-400);
+  --button-main-colors: var(--key-bg-main-300);
+  --button-text-main-colors: var(--text-color-400);
+  --button-primary-text-colors: var(--text-color-100);
+
+  --bg-clr-300: hsl(0, 0%, 90%);
+  --bg-clr-400: hsl(0, 5%, 81%);
+  --bg-clr-800: hsl(0, 0%, 93%);
+
+  --key-bg-secondary-300: hsl(185, 42%, 37%);
+  --key-sh-secondary-300: hsl(185, 58%, 25%);
+  --key-bg-primary-300: hsl(25, 98%, 40%);
+  --key-sh-primary-300: hsl(25, 99%, 27%);
+  --key-bg-main-300: hsl(45, 7%, 89%);
+  --key-sh-main-300: hsl(35, 11%, 61%);
+
+  --text-color-400: hsl(60, 10%, 19%);
+  --text-color-100: hsl(0, 0%, 100%);
+  --clr-primary-hover: hsl(25, 98%, 50%);
+  --clr-main-hover: hsl(45, 7%, 100%);
+  --clr-secondary-hover: hsl(185, 42%, 47%);
+}
+html[data-theme="dark"] {
+  --screen-bg-color: hsl(268, 71%, 12%);
+  --screen-text-color: var(--text-color-400);
+  --header-text-color: var(--text-color-400);
+  --button-text-main-colors: var(--text-color-400);
+  --button-main-colors: var(--key-bg-main-300);
+  --button-primary-text-colors: hsl(198, 20%, 13%);
+
+  --bg-clr-300: hsl(268, 75%, 9%);
+  --bg-clr-400: hsl(268, 71%, 12%);
+  --bg-clr-800: hsl(268, 71%, 12%);
+
+  --key-bg-secondary-300: hsl(281, 89%, 26%);
+  --key-sh-secondary-300: hsl(285, 91%, 52%);
+  --key-bg-primary-300: hsl(176, 100%, 44%);
+  --key-sh-primary-300: hsl(177, 92%, 70%);
+  --key-bg-main-300: hsl(268, 47%, 21%);
+  --key-sh-main-300: hsl(290, 70%, 36%);
+
+  --text-color-400: hsl(52, 100%, 62%);
+  --text-color-100: hsl(0, 0%, 100%);
+  --clr-primary-hover: hsl(176, 100%, 54%);
+  --clr-main-hover: hsl(268, 47%, 31%);
+  --clr-secondary-hover: hsl(281, 89%, 36%);
+}
+
+body {
+  background-color: var(--bg-clr-300);
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  color: var(--header-text-color);
+  align-items: center;
+}
+.theme-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.theme-container p {
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  letter-spacing: 1px;
+}
+.labels {
+  position: absolute;
+  top: -0.75rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.labels label {
+  font-size: 0.5rem;
+}
+
+.theme-switcher {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-clr-400);
+  padding: 0 0.3rem;
+  border-radius: 100px;
+}
+.theme-switcher input {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  font: inherit;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+.theme-switcher input:checked {
+  background-color: var(--key-bg-primary-300);
+}
+.theme-switcher input:checked:hover {
+  background-color: var(--clr-primary-hover);
+}
+
+.calc-screen {
+  text-align: right;
+  background-color: var(--screen-bg-color);
+  color: var(--screen-text-color);
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+}
+.calc-buttons {
+  background-color: var(--bg-clr-400);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+button {
+  cursor: pointer;
+  margin: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--button-main-colors);
+  border-radius: 10px;
+  border-color: var(--key-bg-main-300);
+  font-size: 1rem;
+  color: var(--button-text-main-colors);
+  box-shadow: 0 3px var(--key-sh-main-300);
+}
+button:hover {
+  background-color: var(--clr-main-hover);
+}
+
+.clr-btn-secondary {
+  color: var(--text-color-100);
+  text-transform: uppercase;
+  background-color: var(--key-bg-secondary-300);
+  box-shadow: 0 3px var(--key-sh-secondary-300);
+  border-color: var(--key-bg-secondary-300);
+}
+
+.clr-btn-secondary:hover {
+  background-color: var(--clr-secondary-hover);
+}
+.clr-btn-primary {
+  color: var(--button-primary-text-colors);
+  text-transform: uppercase;
+  background-color: var(--key-bg-primary-300);
+  border-color: --;
+  box-shadow: 0 3px var(--key-sh-primary-300);
+}
+.clr-btn-primary:hover {
+  background-color: var(--clr-primary-hover);
+}
+
+.small-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.big-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 20px;
+  }
+  button {
+    margin: 0.25rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 3px;
+  }
+}

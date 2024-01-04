@@ -1,0 +1,48 @@
+.home-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.home-page {
+  color: #fff;
+}
+
+.main-home {
+  display: grid;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+}
+.home--text-container {
+  max-width: 600px;
+}
+.main-home p {
+  font-weight: 300;
+}
+
+.main-home p:first-child {
+  text-transform: uppercase;
+  color: #d0d6f9;
+  letter-spacing: 3px;
+}
+.main-home p:last-child {
+  color: #d0d6f9;
+}
+
+.explore {
+  font-family: "Bellefair", serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: black;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
+  justify-self: center;
+  align-self: center;
+}

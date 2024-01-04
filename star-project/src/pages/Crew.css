@@ -1,0 +1,50 @@
+.crew--main > * {
+  color: #fff;
+}
+.crew--header {
+  color: #fff;
+}
+.crew--main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.crew--nav {
+  display: flex;
+  align-items: center;
+}
+.crew--image-container img {
+  max-width: 100%;
+  padding: 2rem;
+}
+.crew--text-contaier {
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  padding: 2rem;
+}
+.crew--text-contaier p {
+  color: #d0d6f9;
+}
+.crew--distance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+}
+
+.crew--font-change {
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.125rem;
+}
+.crew--description {
+  margin-bottom: 2rem;
+}
+.crew--title {
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  color: #979797 !important;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="blackout">
+    <header>
+      <div class="logo">
+        <img src="images/logo.svg" alt="" />
+      </div>
+      <div class="menu">
+        <img src="./images/icon-menu.svg" alt="" />
+      </div>
+      <div class="desktop">
+        <div class="dropdown">
+          <button>Features</button>
+          <div class="dropdown-content">
+            <ul>
+              <li>
+                <a href="#">Todo List</a>
+              </li>
+              <li>
+                <a href="#">Todo List</a>
+              </li>
+              <li>
+                <a href="#">Todo List</a>
+              </li>
+              <li>
+                <a href="#">Todo List</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>Company</div>
+        <div>Careers</div>
+        <div>About</div>
+      </div>
+      <div class="mobile hidden">
+        <ul>
+          <li>Features</li>
+          <li>Company</li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <svg
+          class="icon-close"
+          width="26"
+          height="26"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g fill="#151515" fill-rule="evenodd">
+            <path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z" />
+            <path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z" />
+          </g>
+        </svg>
+        <div class="sign-in">
+          <a href=""> Login </a>
+          <a href=""> Register </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="text-container grid-small-gap">
+        <div class="text-content grid-big-gap">
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <div class="link-container">
+            <a href=""> Learn more </a>
+          </div>
+        </div>
+        <div class="clients">
+          <img src="images/client-audiophile.svg" alt="" />
+          <img src="images/client-databiz.svg" alt="" />
+          <img src="images/client-maker.svg" alt="" />
+          <img src="images/client-meet.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="image-container">
+        <picture>
+          <source
+            srcset="images/image-hero-desktop.png"
+            media="(min-width: 700px)"
+          />
+          <img src="images/image-hero-mobile.png" alt="image person" />
+        </picture>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

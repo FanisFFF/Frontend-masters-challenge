@@ -1,0 +1,260 @@
+:root {
+  --clr-primary-red: hsl(12, 88%, 59%);
+  --clr-primary-blue: hsl(228, 39%, 23%);
+
+  --clr-neutral-blue: hsl(227, 12%, 61%);
+  --clr-neutral-dark-blue: hsl(233, 12%, 13%);
+  --clr-neutral-red: hsl(13, 100%, 96%);
+  --clr-neutral-gray: hsl(0, 0%, 98%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-size: 16px;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+svg {
+  width: 100%;
+}
+
+.btn {
+  color: var(--clr-neutral-red);
+  display: grid;
+  place-content: center;
+  background-color: var(--clr-primary-red);
+  border-radius: 100px;
+  width: 8rem;
+  height: 3rem;
+  /* box-shadow: 10px 10px 10px var(--clr-neutral-red); */
+}
+
+.main-heading--image-container {
+  max-width: 100%;
+}
+header ul {
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.header-btn {
+  display: none;
+}
+h1,
+h2,
+h3 {
+  color: var(--clr-primary-blue);
+}
+p {
+  color: var(--clr-neutral-blue);
+}
+.grid-small-gap {
+  display: grid;
+  gap: 1rem;
+}
+.place-at-center {
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.main-heading {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background: url(./images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+}
+.main-heading h1 {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+}
+.main-heading--text-container {
+  order: 2;
+}
+.main-heading--image-container {
+  order: 1;
+}
+.feature-number {
+  border-radius: 100px;
+  background-color: var(--clr-primary-red);
+  width: 2.5rem;
+  height: 2rem;
+}
+.feature-number p {
+  color: var(--clr-neutral-gray);
+}
+.number-heading-container {
+  position: relative;
+  background-color: var(--clr-neutral-red);
+  margin-bottom: 0.75rem;
+}
+.feature-heading {
+  position: absolute;
+  top: 0.25rem;
+  left: 3rem;
+}
+.feature-container {
+  padding: 1rem;
+}
+.slider {
+  /* line them up horizontally */
+  display: flex;
+
+  /* allow for scrolling */
+  overflow-x: auto;
+
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+}
+.slider > div {
+  /* make sure the width is honored */
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+}
+
+.testomonials-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* place-content: center; */
+  justify-items: center;
+  padding: 1rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.costumer-name {
+  color: var(--clr-neutral-dark-blue);
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.simplify--container {
+  background-color: var(--clr-primary-red);
+  margin-top: 1rem;
+  /* background: url(./images/bg-tablet-pattern.svg); */
+  background-repeat: no-repeat;
+}
+
+.simplify--container .btn {
+  background-color: var(--clr-neutral-gray);
+  color: var(--clr-primary-red);
+}
+.simplify--container h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+
+  letter-spacing: -1.5px;
+  color: var(--clr-neutral-gray);
+}
+.simplify--container {
+  display: grid;
+  gap: 1rem;
+  padding: 5rem 4rem;
+}
+
+footer {
+  background-color: var(--clr-neutral-dark-blue);
+  display: grid;
+  padding: 1rem;
+}
+footer > * {
+  order: 2;
+}
+footer form {
+  order: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer a {
+  color: var(--clr-neutral-gray);
+}
+.footer-icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 3rem;
+}
+
+@media (min-width: 550px) {
+  .main-heading--text-container {
+    order: 1;
+    align-items: center;
+    gap: 0;
+    text-align: left;
+    padding: 1rem;
+  }
+  .main-heading--text-container > * {
+    padding: 1rem;
+  }
+
+  .main-heading--image-container {
+    order: 2;
+  }
+  .main-heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .button-container {
+    justify-content: flex-start;
+  }
+
+  .feature-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .feature-section--qustion-container {
+    align-self: center;
+    justify-self: center;
+    padding: 1rem;
+  }
+
+  .simplify--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+
+  footer {
+    display: flex;
+  }
+  header ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: center;
+  }
+  header a {
+    color: var(--clr-neutral-dark-blue);
+  }
+  .header-btn {
+    display: block;
+  }
+  .header-btn {
+    display: grid;
+    place-content: center;
+  }
+  .menu-icon {
+    display: none;
+  }
+}

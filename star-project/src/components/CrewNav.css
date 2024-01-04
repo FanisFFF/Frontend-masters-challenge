@@ -1,0 +1,23 @@
+.crew-nav {
+}
+.crew-nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 10rem;
+}
+
+.crew-nav--dot {
+  height: 20px;
+  width: 20px;
+  background-color: #979797;
+  border-radius: 50%;
+}
+
+.crew-nav--dot:hover {
+  background-color: hsl(0, 0%, 79%);
+}
+
+.crew-nav--dot--selected {
+  background-color: #fff;
+}

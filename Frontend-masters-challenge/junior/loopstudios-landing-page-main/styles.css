@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  list-style: none;
+}
+img,
+svg {
+  max-width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  display: none;
+}
+
+.main-section {
+  background-image: url(./images/mobile/image-hero.jpg);
+  color: #fff;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* width: 100%; */
+  padding: 2rem;
+  display: grid;
+  display: 1fr;
+}
+.heading--text-container {
+  display: grid;
+}
+.heading--text-container h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 1rem 0.5rem;
+}
+
+.heading--text-border {
+  display: grid;
+  place-content: center;
+  border: 1px solid white;
+  max-width: 30rem;
+  max-height: 15rem;
+}
+.heading-container {
+  max-width: 30rem;
+}
+
+.vr-section {
+  /* padding: 1rem; */
+}
+.vr-section--img-container {
+  padding: 2rem;
+}
+.vr-section--text-container {
+  padding: 0rem 3rem;
+  text-align: center;
+}
+
+.vr-section h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.vr-section p {
+  font-family: Alata, sans-serif;
+  color: hsl(0, 0%, 55%);
+  padding: 1rem;
+}
+.creation-section--heading {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.creation-section--heading a {
+  display: none;
+}
+.creation-section--heading h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.images--section {
+  /* padding: 1rem; */
+  display: grid;
+  place-content: center;
+}
+.shade {
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  display: grid;
+  /* padding: 1rem; */
+}
+.image-container {
+  /* background-color: aqua; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20rem;
+  height: 7rem;
+  margin: 1rem 0;
+  color: #fff;
+  /* padding: 0 0 2rem 1rem; */
+}
+.image-container p {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 0 5rem 0 0;
+  transform: translate(1rem, -1rem);
+}
+
+.image-container:nth-child(1) {
+  background-image: url(./images/mobile/image-deep-earth.jpg);
+}
+.image-container:nth-child(2) {
+  background-image: url(./images/mobile/image-curiosity.jpg);
+}
+.image-container:nth-child(3) {
+  background-image: url(./images/mobile/image-fisheye.jpg);
+}
+.image-container:nth-child(4) {
+  background-image: url(./images/mobile/image-from-above.jpg);
+}
+.image-container:nth-child(5) {
+  background-image: url(./images/mobile/image-grid.jpg);
+}
+.image-container:nth-child(6) {
+  background-image: url(./images/mobile/image-night-arcade.jpg);
+}
+.image-container:nth-child(7) {
+  background-image: url(./images/mobile/image-pocket-borealis.jpg);
+}
+.image-container:nth-child(8) {
+  background-image: url(./images/mobile/image-soccer-team.jpg);
+}
+.see-all {
+  display: grid;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.see-all a {
+  font-family: Alata, sans-serif;
+  text-transform: uppercase;
+  color: black;
+  border: 1px solid black;
+  padding: 0.5rem 2rem;
+}
+.footer-container {
+  background-color: black;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  display: grid;
+  justify-content: center;
+}
+.links-container {
+  display: grid;
+  justify-content: center;
+  padding: 1rem;
+}
+.links-container a {
+  color: #fff;
+  margin: 0.75rem;
+}
+.footer--rights {
+  display: grid;
+  justify-content: center;
+}
+footer p {
+  font-family: Alata, sans-serif;
+  color: hsl(0, 0%, 55%);
+}
+
+@media (min-width: 400px) {
+  .menu-icon {
+    display: none;
+  }
+  .navbar {
+    display: block;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .main-section {
+    background-image: url(./images/desktop/image-hero.jpg);
+    flex-direction: column;
+    /* grid-template-columns: 1fr; */
+    /* justify-content: space-around; */
+    height: 70vh;
+    font-size: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .main-section h1 {
+  }
+}
+
+@media (min-width: 700px) {
+  .vr-section {
+    display: grid;
+    /* max-width: 30rem; */
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .vr-section--text-container {
+    background-color: #fff;
+    position: absolute;
+    display: grid;
+    place-content: center;
+    transform: translate(-4rem, 10rem);
+    /* position: absolute; */
+    max-width: 40rem;
+    min-width: 35rem;
+    padding: 5rem;
+    top: 50rem;
+    left: 45rem;
+    /* transform: translate(-); */
+    z-index: 10;
+  }
+  .vr-section--img-container {
+    z-index: 2;
+  }
+  .vr-section--container {
+    display: grid;
+    place-content: center;
+    padding: 6rem;
+  }
+  .images--section {
+    display: grid;
+    padding: 3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .image-container:nth-child(1) {
+    background-image: url(./images/desktop/image-deep-earth.jpg);
+  }
+  .image-container:nth-child(2) {
+    background-image: url(./images/desktop/image-curiosity.jpg);
+  }
+  .image-container:nth-child(3) {
+    background-image: url(./images/desktop/image-fisheye.jpg);
+  }
+  .image-container:nth-child(4) {
+    background-image: url(./images/desktop/image-from-above.jpg);
+  }
+  .image-container:nth-child(5) {
+    background-image: url(./images/desktop/image-grid.jpg);
+  }
+  .image-container:nth-child(6) {
+    background-image: url(./images/desktop/image-night-arcade.jpg);
+  }
+  .image-container:nth-child(7) {
+    background-image: url(./images/desktop/image-pocket-borealis.jpg);
+  }
+  .image-container:nth-child(8) {
+    background-image: url(./images/desktop/image-soccer-team.jpg);
+  }
+}
